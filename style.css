@@ -1,0 +1,118 @@
+/* Сброс стандартных стилей */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Страница */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #565478;
+}
+
+/* Основной блок */
+
+.products {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 40px;
+}
+
+/* Заголовок */
+
+.products__title {
+    text-align: center;
+    font-size: 56px;
+    font-weight: 300;
+    color: #565478;
+    margin-bottom: 70px;
+}
+
+/* Сетка карточек */
+
+.products__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+/* Карточка */
+
+.card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Картинка */
+
+.card__image {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Тип кожи */
+
+.card__type {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #b7b7b7;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+/* Название товара */
+
+.card__title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #565478;
+    margin-bottom: 16px;
+}
+
+/* Описание */
+
+.card__description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Подзаголовок */
+
+.card__subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Список */
+
+.card__ingredients {
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.card__ingredients li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+/* Цена */
+
+.card__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    color: #565478;
+}
