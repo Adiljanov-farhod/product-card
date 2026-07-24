@@ -1,118 +1,107 @@
-/* Сброс стандартных стилей */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Страница */
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
+    background-color: #f5f5f5;
     color: #565478;
 }
-
-/* Основной блок */
 
 .products {
-    max-width: 1200px;
-    margin: 60px auto;
-    padding: 40px;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 50px 40px;
 }
-
-/* Заголовок */
 
 .products__title {
-    text-align: center;
+    margin-bottom: 60px;
+
+    color: #565478;
     font-size: 56px;
     font-weight: 300;
-    color: #565478;
-    margin-bottom: 70px;
+    text-align: center;
 }
 
-/* Сетка карточек */
-
 .products__list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 35px;
 }
 
-/* Карточка */
-
 .card {
-    background-color: #ffffff;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-}
+    display: flex;
+    flex-direction: column;
 
-/* Картинка */
+    width: 360px;
+    padding: 25px;
+
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
 
 .card__image {
     width: 100%;
-    display: block;
-    margin-bottom: 20px;
-}
+    height: 260px;
+    margin-bottom: 25px;
 
-/* Тип кожи */
+    object-fit: contain;
+}
 
 .card__type {
-    font-size: 12px;
-    text-transform: uppercase;
-    color: #b7b7b7;
-    letter-spacing: 1px;
     margin-bottom: 12px;
-}
 
-/* Название товара */
+    color: #b8b8b8;
+    font-size: 14px;
+    text-transform: uppercase;
+}
 
 .card__title {
-    font-size: 30px;
-    font-weight: 700;
-    color: #565478;
     margin-bottom: 16px;
-}
 
-/* Описание */
+    color: #565478;
+    font-size: 24px;
+    font-weight: 700;
+}
 
 .card__description {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
+    margin-bottom: 18px;
 
-/* Подзаголовок */
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.5;
+}
 
 .card__subtitle {
-    font-size: 16px;
-    font-weight: 600;
     margin-bottom: 10px;
+
+    font-size: 18px;
+    font-weight: 700;
 }
 
-/* Список */
-
 .card__ingredients {
+    margin-bottom: 25px;
     padding-left: 20px;
-    margin-bottom: 30px;
+
+    color: #666666;
 }
 
 .card__ingredients li {
     margin-bottom: 8px;
-    line-height: 1.5;
 }
-
-/* Цена */
 
 .card__price {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    font-size: 24px;
-    font-weight: bold;
+    margin-top: auto;
 
     color: #565478;
+    font-size: 24px;
+    font-weight: 700;
 }
