@@ -12,12 +12,12 @@ body {
 }
 
 .container {
-  width: 1180px;
+  width: 1280px;
   margin: 0 auto;
 }
 
 .products {
-  padding: 90px 0 120px;
+  padding: 120px 0 120px;
   background-image: url("images/background-dandelions.png");
   background-repeat: no-repeat;
   background-position: center top;
@@ -25,10 +25,10 @@ body {
 }
 
 .products__title {
-  margin-bottom: 60px;
+  margin-bottom: 70px;
   text-align: center;
-  font-size: 64px;
-  font-weight: 300;
+  font-size: 70px;
+  font-weight: 400;
   color: #5a5b88;
 }
 
@@ -36,13 +36,15 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 35px 30px;
+  column-gap: 30px;
+  row-gap: 40px;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  width: 360px;
+  width: 340px;
+  min-height: 573px;
   padding: 20px;
   background-color: #f8f7fc;
   border: 1px solid #f1eff8;
@@ -53,7 +55,7 @@ body {
   display: block;
   width: 100%;
   max-width: 100%;
-  height: 220px;
+  height: 230px;
   margin-bottom: 20px;
   object-fit: contain;
 }
@@ -89,9 +91,10 @@ body {
 
 .card__ingredients {
   padding-left: 18px;
+  list-style-type: circle;
 }
 
-.card__ingredients li {
+.card__ingredient {
   margin-bottom: 6px;
   font-size: 14px;
 }
@@ -104,10 +107,10 @@ body {
   color: #5a5b88;
 }
 
-.card__price span:first-child {
+.card__price--label {
   font-weight: 700;
 }
 
-.card__price span:last-child {
+.card__price--value {
   font-weight: 400;
 }
