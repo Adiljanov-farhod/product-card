@@ -114,3 +114,39 @@ body {
 .card__price--value {
   font-weight: 400;
 }
+
+.card--active {
+  background-color: #c9f5d2;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 70px;
+}
+
+.button {
+  width: 150px;
+  min-height: 50px;
+  padding: 10px;
+  border: 2px solid #5a5b88;
+  border-radius: 24px;
+  background-color: #ded5fc;
+  color: #3f4175;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: #b8a8ed;
+}
+
+.button--active {
+  background-color: hsla(60, 100%, 50%, 0.964) !important;
+  color: rgb(0, 0, 0);
+}
